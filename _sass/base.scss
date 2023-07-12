@@ -1,3 +1,6 @@
+@import "variables";
+@import "animations";
+
 * {
 }
 
@@ -10,7 +13,11 @@ html {
     object-fit: cover;
 }
 
-$hero-image-url: '';
+.letters-spaced {
+  letter-spacing: 6px;
+}
+
+$hero-image-url: '../../assets/images/skyline.jpg';
 .hero-section {
   position: relative;
   height: 100vh;
@@ -20,7 +27,7 @@ $hero-image-url: '';
     background-image: url($hero-image-url);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -40,6 +47,9 @@ $hero-image-url: '';
   }
 
   .hero-text {
+    h1, h2 {
+      letter-spacing: 6px;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,11 +60,38 @@ $hero-image-url: '';
   }
 }
 
-.button, .btn {
-  color: white;
-  font-weight: 900;
+.btn-primary, .btn-secondary {
+  color: white !important;
+  font-weight: 800 !important; 
 }
 
-@import "variables";
-@import "animations";
+.separator {
+  position: relative;
+  height: 2px;
+  background-color: #ccc;
+  margin: 10px 0;
+  .animated-line {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    height: 100%;
+    width: 30%;
+    background-color: #000;
+    animation: animateSeparator 1s linear forwards;
+  }
+  @keyframes animateSeparator {
+    0% {
+      left: 20%;
+    }
+    100% {
+      left: 50%;
+    }
+  }
+}
+
+::selection {
+  color: $primary;
+  background: $primary;
+}
+
 @import "bootstrap/bootstrap";

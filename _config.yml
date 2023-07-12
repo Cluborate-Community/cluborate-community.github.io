@@ -21,6 +21,8 @@ collections:
     output: false # output = false for no page generation
   clubs:
     output: true
+    permalink: /:collection/:name
+
 
 defaults:
 -
@@ -29,9 +31,16 @@ defaults:
     type: "pages"
   values:
     layout: "wrapper"
-- 
+-
   scope:
     path: ""
     type: "events"
   values:
-    layout: "events"
+    layout: "event"
+-
+  scope:
+    path: ""
+    type: "clubs"
+  values:
+    layout: "club"
+
