@@ -1,0 +1,35 @@
+---
+title: FAQs
+questions:
+- q: Are there any events coming up?
+  a: Yes. We have bi-weekly networking events on our Discord server!
+- q: I don't have Discord. What do I do?
+  a: Follow our Instagram page and subscribe to our blog and newsletter! Unfortunately, you won’t be able to participate in our Discord activities at the moment but you can keep in touch with what’s happening in Cluborate’s community!
+- q: Are there roles left for executives?
+  a: Yes. We are rapidly expanding and we would appreciate new applications anytime. The committee application is always open, so definitely fill that out if you are hoping to join our team ASAP.
+---
+
+<!-- faq -->
+<section>
+  <div class="container my-4">
+    <h1>Frequently Asked Questions</h1>
+    <hr>
+    <div class="accordion" id="accordionQ&A">
+      {%for question in page.questions%}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-{{forloop.index}}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{forloop.index}}" aria-expanded="false" aria-controls="collapse-{{forloop.index}}">
+            {{question.q}}
+          </button>
+        </h2>
+        <div id="collapse-{{forloop.index}}" class="accordion-collapse collapse" aria-labelledby="heading-{{forloop.index}}" data-bs-parent="#accordionQ&A">
+          <div class="accordion-body">
+            {{question.a}}
+          </div>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+</section>
+
+{% include ask-form.html %}
