@@ -1,0 +1,37 @@
+title: Cluborate
+email: info@cluborate.org
+location: Vancouver, BC, Canada
+description: >-
+  COLLABORATE TO INSPIRE
+baseurl: "" 
+url: https://www.cluborate.org/"
+social_links:
+  discord: https://discord.com/invite/AuCmfHTUaz
+  linkedin: https://www.linkedin.com/company/cluborate-community/
+  instagram: https://www.instagram.com/cluborate.connect
+
+plugins:
+  - jekyll-loading-lazy
+  - jekyll-sass-converter
+
+theme: null
+
+collections:
+  events:
+    output: false # output = false for no page generation
+  clubs:
+    output: true
+
+defaults:
+-
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "wrapper"
+- 
+  scope:
+    path: ""
+    type: "events"
+  values:
+    layout: "events"

@@ -1,0 +1,53 @@
+- department: Board of Directors
+  people:
+    - name: Edward Gordon
+      position: Director
+
+    - name: Lawerence Wang
+      position: Director
+
+    - name: Julia Gotovsky
+      position: Director
+
+- department: Presidential Board
+  people:
+    - name: Coco Ji
+      position: Co-President
+
+    - name: Richie Zhang
+      position: Co-President
+
+    - name: Madison Kim
+      position: VP of Internal
+
+    - name: Jonathan Wang
+      position: VP of Operations
+
+    - name: Alexis Chow
+      position: VP of Communications
+
+- department: Head Coordinators
+  people:
+    - name: Mary Tian
+      position: Head of HR
+
+    - name: Howard Fu
+      position: Head of Secretary
+
+    - name: Ben Zhou
+      position: Productions Coordinator
+
+    - name: Danielle Zhang
+      position: Resources Coordinator
+
+    - name: Alan Dai
+      position: Events Coordinator
+
+    - name: Aki
+      position: IT Coordinator
+
+    - name: Jason Qu
+      position: Communications Coordinator
+      
+    - name: Maria Peng
+      position: Marketing Coordinator
