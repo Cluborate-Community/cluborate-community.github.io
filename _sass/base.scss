@@ -17,6 +17,7 @@ html {
   letter-spacing: 6px;
 }
 
+
 $hero-image-url: '../../assets/images/skyline.jpg';
 .hero-section {
   position: relative;
@@ -78,9 +79,15 @@ $hero-image-url: '../../assets/images/skyline.jpg';
 }
 
 
+.btn {
+  font-weight: 800 !important;
+}
 .btn-primary, .btn-secondary {
   color: white !important;
-  font-weight: 800 !important; 
+}
+
+.btn-outline-primary, .btn-outline-secondary {
+  border-width: medium !important; 
 }
 
 .separator {
@@ -110,6 +117,48 @@ $hero-image-url: '../../assets/images/skyline.jpg';
 ::selection {
   color: $primary;
   background: $primary;
+}
+@keyframes rotate-words {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.rotating-words span:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.rotating-words span:nth-child(3) {
+  animation-delay: 3s;
+}
+
+@keyframes rotate-words {
+  0%, 20% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  25%, 50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  55%, 100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 
 @import "bootstrap/bootstrap";
