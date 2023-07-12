@@ -1,0 +1,121 @@
+---
+title: Volunteer
+
+executive_positions:
+  - name: Regional Multimedia Director
+    responsibilities:
+      - Create posters, infographics, PowerPoints, videos, and all other promotional materials
+    available: true
+  - name: Regional Marketing Directors
+    responsibilities:
+      - Manage social media platforms
+      - Create and initiate promotion plans 
+    available: true
+  - name: Regional Secretary
+    responsibilities:
+      - Keep tracks of administration files and notes
+      - Take meeting minutes
+    available: true
+  - name: Regional Website Director
+    responsibilities:
+      - Create a new website for regional chapters
+      - Manages the website 
+    available: true
+  - name: Regional President
+    responsibilities:
+      - Manages regional team and oversees team performance
+      - Oversees contact with chapter presidents in the region
+    available: true
+  - name: Regional Outreach Directors
+    responsibilities:
+      - Reach out to schools and potential chapter leaders (students)
+      - Look for sponsorships and collaborations
+    available: true
+
+---
+
+<!-- this page should list all available and open positions -->
+
+<!-- todo: general volunteer -->
+<section>
+  <div class="container my-4">
+    <h1>Volunteer Opportunities</h1>
+        <hr>
+        <div>
+          <div class="row row-cols-1 row-cols-sm-2">
+            <!-- what you'll do -->
+            <div class="col">
+              <h2>
+                What You’ll Do</h2>
+              <p>
+                - To manage all school chapters in the region 
+                - To outreach and initiate contact with individuals from different schools who are qualified to start a chapter
+                - To run inter-school chapter meetings/events
+                - To provide resourceful event ideas, relations, and communications with the chapters in that region
+              </p>
+            </div>
+            <!-- qualifications -->
+            <div class="col">
+              <h2>Qualifications?</h2>
+              <p>
+                - Experienced in team management and executive work
+                - Relations and/or connections with a significant amount of people from a wide variety of schools
+                - Relations and/or connections with a significant amount of people from a wide variety of schools
+              </p>
+          </div>
+        </div>
+  </div>
+</section>
+
+<!-- exec roles -->
+
+<!-- missing: highlights, upcoming events, past events, what members have to say, gallery -->
+<section>
+    <div class="container my-4">
+        <h1>Executive Positions</h1>
+        <hr>
+        <div>
+          <div class="row row-cols-1 row-cols-sm-2">
+            <!-- what you'll do -->
+            <div class="col">
+              <h2>
+                What You’ll Do</h2>
+              <p>
+                - To manage all school chapters in the region 
+                - To outreach and initiate contact with individuals from different schools who are qualified to start a chapter
+                - To run inter-school chapter meetings/events
+                - To provide resourceful event ideas, relations, and communications with the chapters in that region
+              </p>
+            </div>
+            <!-- qualifications -->
+            <div class="col">
+              <h2>Qualifications?</h2>
+              <p>
+                - Experienced in team management and executive work
+                - Relations and/or connections with a significant amount of people from a wide variety of schools
+                - Relations and/or connections with a significant amount of people from a wide variety of schools
+              </p>
+          </div>
+        </div>
+
+        <!-- positions -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mt-2 g-2">
+          {% for position in page.executive_positions %}
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">{{position.name}}</h4>
+                <ul class="card-text">
+                  {% for responsibility in position.responsibilities %}
+                  <li>{{ responsibility }}</li>
+                  {% endfor %}
+                </ul>
+                <a class="btn btn-primary" href="#">Apply</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
