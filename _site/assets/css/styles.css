@@ -1,55 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.hero-section {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-.hero-section .hero-image {
-  background-image: url("");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.hero-section .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-.hero-section .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ffffff;
-  z-index: 1;
-}
-
-.button, .btn {
-  color: white;
-  font-weight: 900;
-}
-
 .slide-in-from-right {
   animation: slide-in-right 1s ease 200ms backwards;
 }
@@ -104,6 +54,105 @@ html {
     transform: translateY(0);
   }
 }
+.slide-up {
+  animation: slide-up 1s ease 200ms backwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.letters-spaced {
+  letter-spacing: 6px;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-section .hero-image {
+  background-image: url("../../assets/images/skyline.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-section .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.hero-section .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+.hero-section .hero-text h1, .hero-section .hero-text .h1, .hero-section .hero-text h2, .hero-section .hero-text .h2 {
+  letter-spacing: 6px;
+}
+
+.btn-primary, .btn-secondary {
+  color: white !important;
+  font-weight: 800 !important;
+}
+
+.separator {
+  position: relative;
+  height: 2px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+.separator .animated-line {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 30%;
+  background-color: #000;
+  animation: animateSeparator 1s linear forwards;
+}
+@keyframes animateSeparator {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+::selection {
+  color: rgb(3, 83, 151);
+  background: rgb(3, 83, 151);
+}
+
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -135,7 +184,7 @@ html {
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: rgb(3, 83, 151);
-  --bs-secondary: rgb(232, 99, 10);
+  --bs-secondary: rgb(255, 106, 7);
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -143,7 +192,7 @@ html {
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 3, 83, 151;
-  --bs-secondary-rgb: 232, 99, 10;
+  --bs-secondary-rgb: 255, 106, 7;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -317,7 +366,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--bs-heading-color, inherit);
 }
@@ -693,68 +742,68 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-size: calc(1.925rem + 8.1vw);
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 8rem;
   }
 }
 
 .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
+  font-size: calc(1.775rem + 6.3vw);
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-2 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
   }
 }
 
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-3 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-5 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-6 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -2030,13 +2079,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #fae0ce;
-  --bs-table-border-color: #e1cab9;
-  --bs-table-striped-bg: #eed5c4;
+  --bs-table-bg: #ffe1cd;
+  --bs-table-border-color: #e6cbb9;
+  --bs-table-striped-bg: #f2d6c3;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e1cab9;
+  --bs-table-active-bg: #e6cbb9;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e7cfbf;
+  --bs-table-hover-bg: #ecd0be;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3057,19 +3106,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: rgb(232, 99, 10);
-  --bs-btn-border-color: rgb(232, 99, 10);
+  --bs-btn-bg: rgb(255, 106, 7);
+  --bs-btn-border-color: rgb(255, 106, 7);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #eb7a2f;
-  --bs-btn-hover-border-color: #ea7323;
-  --bs-btn-focus-shadow-rgb: 197, 84, 9;
+  --bs-btn-hover-bg: #ff802c;
+  --bs-btn-hover-border-color: #ff7920;
+  --bs-btn-focus-shadow-rgb: 217, 90, 6;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ed823b;
-  --bs-btn-active-border-color: #ea7323;
+  --bs-btn-active-bg: #ff8839;
+  --bs-btn-active-border-color: #ff7920;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: rgb(232, 99, 10);
-  --bs-btn-disabled-border-color: rgb(232, 99, 10);
+  --bs-btn-disabled-bg: rgb(255, 106, 7);
+  --bs-btn-disabled-border-color: rgb(255, 106, 7);
 }
 
 .btn-success {
@@ -3192,19 +3241,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: rgb(232, 99, 10);
-  --bs-btn-border-color: rgb(232, 99, 10);
+  --bs-btn-color: rgb(255, 106, 7);
+  --bs-btn-border-color: rgb(255, 106, 7);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(232, 99, 10);
-  --bs-btn-hover-border-color: rgb(232, 99, 10);
-  --bs-btn-focus-shadow-rgb: 232, 99, 10;
+  --bs-btn-hover-bg: rgb(255, 106, 7);
+  --bs-btn-hover-border-color: rgb(255, 106, 7);
+  --bs-btn-focus-shadow-rgb: 255, 106, 7;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(232, 99, 10);
-  --bs-btn-active-border-color: rgb(232, 99, 10);
+  --bs-btn-active-bg: rgb(255, 106, 7);
+  --bs-btn-active-border-color: rgb(255, 106, 7);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgb(232, 99, 10);
+  --bs-btn-disabled-color: rgb(255, 106, 7);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(232, 99, 10);
+  --bs-btn-disabled-border-color: rgb(255, 106, 7);
   --bs-gradient: none;
 }
 
@@ -6841,7 +6890,7 @@ textarea.form-control-lg {
 
 .text-bg-secondary {
   color: #000 !important;
-  background-color: RGBA(232, 99, 10, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 106, 7, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -6882,10 +6931,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: rgb(232, 99, 10) !important;
+  color: rgb(255, 106, 7) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #ed823b !important;
+  color: #ff8839 !important;
 }
 
 .link-success {

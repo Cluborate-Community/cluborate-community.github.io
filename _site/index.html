@@ -10,13 +10,13 @@
   <link rel="icon" type="image/x-icon" href="/" />
 
   <!-- custom styles -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container-fluid px-3">
-    <a class="navbar-brand fw-bold link-primary" href="/">Cluborate Community</a>
+    <a class="navbar-brand fw-bold link-primary" href="/">Cluborate <span class="link-secondary">Community</span></a>
     <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse"
       data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -28,10 +28,16 @@
           <a class="nav-link" href="/#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/team#get-involved">Get Involved</a>
+          <a class="nav-link" href="/team">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/faq"> FAQ </a>
+          <a class="nav-link" href="/get-involved">Get Involved</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/faqs"> FAQs </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/club-list">Clubs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/#contact">Contact</a>
@@ -49,20 +55,134 @@
   <div class="hero-overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="hero-text overflow-hidden">
-        <h1 class="display-1 fw-bold fst-italic slide-in-from-left text-uppercase">
-          COLLABORATE TO INSPIRE
-        </h1>
+      <div class="hero-text">
+        <h2>COLLABORATE TO</h2>
+        <h1 class="display-1 fw-bold slide-up">INSPIRE</h1>
+        <div class="slide-up">
+          <a class="btn btn-primary" href="#">Join Today</a>
+          <a class="btn btn-secondary ms-1" href="#">Learn More</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
-</main>
-  <footer class="footer pt-5 pb-3 border-top">
+
+
+<!-- missing: highlights, upcoming events, past events, what members have to say, gallery -->
+<section>
+  <div class="container my-5">
+    <div class="row g-5">
+      <!-- vision -->
+      <div class="col">
+        <h6 class="letters-spaced">VISION</h6>
+        <h2>Collaborate to EMPOWER.</h2>
+        <p>At CLUBORATE, we are firm believers in providing youth with opportunities to get connected. We hope to see
+          youth clubs and organizations working together to build a memorable high-school experience for students and
+          volunteer executives. As each of us has our own unique talents and ambitions, we aspire for all youth to have
+          a platform to connect with each other. Through this mutual link, our goal is to inspire positive change in our
+          community while pursuing personal passions.
+        </p>
+      </div>
+      <!-- about -->
+      <div class="col">
+        <h6 class="letters-spaced">ABOUT</h6>
+        <h2>Collaborate to INSPIRE.</h2>
+        <p>Our mission is to see all youth organizations create greater impacts for the people around us. Through this,
+          we hope to expose both clubs and students to more opportunities to learn, engage and grow from participating
+          in what interests them.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container my-5">
+    <div class="row g-5">
+      <!-- by the numbers -->
+      <div class="col">
+        <h2>Cluborate by the numbers.</h2>
+        <div class="row row-cols-2 pt-2 gy-3">
+          <div class="col">
+            <p class="fs-1 m-0">40+</p>
+            <div class="separator">
+              <div class="animated-line"></div>
+            </div>
+            <p class="text-muted">Club partners</p>
+          </div>
+          <div class="col">
+            <p class="fs-1 m-0">20+</p>
+            <div class="separator">
+              <div class="animated-line"></div>
+            </div>
+            <p class="text-muted">Club Members</p>
+          </div>
+          <div class="col">
+            <p class="fs-1 m-0">1</p>
+            <div class="separator">
+              <div class="animated-line"></div>
+            </div>
+            <p class="text-muted">Sponsors</p>
+          </div>
+          <div class="col">
+            <p class="fs-1 m-0">6</p>
+            <div class="separator">
+              <div class="animated-line"></div>
+            </div>
+            <p class="text-muted">Countries</p>
+          </div>
+        </div>
+      </div>
+      <!-- join us -->
+      <div class="col">
+        <h2>Join Us</h2>
+        <!-- exec -->
+        <h4>Volunteer</h4>
+        <p>
+          We’re looking for creative and passionate individuals to join our team. See all positions and submit your
+          application.
+        </p>
+        <h4>Executive Team</h4>
+        <p>
+          We’re looking for creative and passionate individuals to join our team. See all positions and submit your
+          application.
+        </p>
+        <a class="btn btn-primary" href="#" role="button">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- question submittion -->
+<section id="contact" class="py-4">
     <div class="container">
-        <div class="row row-cols-1 row-cols-lg-2 g-2">
-            <div class="col col-6">
-                <h3><span class="text-primary fw-bold">Cluborate Community</h3>
+        <h2>Submit Your Questions</h2>
+        <form class="row g-2">
+            <div class="form-group col-sm-6">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Obi-Wan Kenobi" required="">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@example.com"
+                    required="">
+            </div>
+            <div class="form-group">
+                <label for="questions">Questions</label>
+                <textarea class="form-control" name="questions" id="questions" rows="5" placeholder=""
+                    required=""></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+        </form>
+    </div>
+</section></main>
+  <footer class="footer bg-light text-dark border-top">
+    <div class="container py-4">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <span class="text-secondary fw-bold display-5"><span class="text-primary">Cluborate</span> Community</span>
                 <ul class="list-unstyled">
                     <li>Email: info@cluborate.org</li>
                     <li>Location: Vancouver, BC, Canada</li>
@@ -73,7 +193,7 @@
                     <a href="https://discord.com/invite/AuCmfHTUaz"><i class="fab fa-discord" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col col-6">
+            <div class="col">
                 <p>Sign up to receive updates.</p>
                 <form>
                     <div class="input-group mb-3">
@@ -88,9 +208,10 @@
             </div>
         </div>
 
-        <div class="col col-12 text-center pt-3 text-muted">
-            <p>&copy;2023 Cluborate. All Rights Reserved.</p>
-        </div>
+        
+    </div>
+    <div class="text-center py-2 text-dark border-top border-1">
+        <p>Cluborate &copy;2023, all rights reserved.</p>
     </div>
 </footer>
 
