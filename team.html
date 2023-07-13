@@ -8,8 +8,11 @@ title: Our Team
             <strong>Executive Applications Open</strong>
             <a name="" id="" class="btn btn-primary ms-auto" href="#" role="button">Apply</a>
         </div>          
-        
+        <!-- todo: temporary - generate team page based off year...  -->
         {% for team in site.data.team %}
+        {% if team.year != 2023 %}
+            {% continue %}
+        {% endif %}
         <div class="mb-5">
             <h2 class="display-6">Execs from {{team.year}}</h2>
             <div class="">
