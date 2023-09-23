@@ -1,0 +1,26 @@
+# - title: About
+#   url: /#about
+
+# - title: Team
+#   url: /team
+
+# - title: Get Involved
+#   dropdown:
+#     - title: Club Coalition
+#       url: /get-involved
+#     - title: Regional Teams
+#       url: /regional-teams
+#     - title: Volunteer
+#       url: /volunteer
+
+- title: FAQs
+  url: /faqs
+
+- title: Contact
+  url: /#contact
+
+- title: Events
+  url: /events-list
+
+- title: Team
+  url: /team

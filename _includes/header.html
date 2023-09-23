@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar bg-primary navbar-expand-md navbar-dark">
   <div class="container-fluid px-3">
-    <a class="navbar-brand fw-bold link-primary" href="/">Cluborate <span class="link-secondary">Community</span></a>
+    <a class="navbar-brand fw-bold" href="/"><span class="text-uranian-blue">Cluborate</span> <span class="text-light">Community</span></a>
     <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse"
       data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -8,34 +8,24 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/team">Team</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropDownGetInvolved" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Get Involved
-          </a>
-          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropDownGetInvolved">
-            <li><a class="dropdown-item" href="/get-involved">Club Coalition</a></li>
-            <li><a class="dropdown-item" href="/regional-teams">Regional Teams</a></li>
-            <li><a class="dropdown-item" href="/volunteer">Volunteer</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/faqs">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/club-list">Clubs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/events-list">Events</a>
-        </li>
+        {% for item in site.data.navbar %}
+          {% if item.dropdown %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" style="font-weight: 900;" href="#" id="dropDown{{ item.title | camelcase }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ item.title }}
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light fw-bold" aria-labelledby="dropDown{{ item.title | camelcase }}">
+                {% for link in item.dropdown %}
+                  <li><a class="dropdown-item" href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
   </div>

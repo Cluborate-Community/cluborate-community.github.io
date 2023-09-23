@@ -17,6 +17,29 @@ html {
   letter-spacing: 6px;
 }
 
+$colors: (
+  uranian-blue: #BAE2FBff,
+  powder-blue: #A3C4D7ff,
+  safety-orange: #FE7809ff,
+  coyote: #8B734Aff,
+  tan: #F6EFE5ff
+);
+
+$body-color: #8B734Aff;
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+
+  .border-#{$color} {
+    border-color: $value;
+  }
+
+  .text-#{$color} {
+    color: $value;
+  }
+}
 
 $hero-image-url: '../../assets/images/skyline.jpg';
 .hero-section {
@@ -116,7 +139,7 @@ $hero-image-url: '../../assets/images/skyline.jpg';
 
 ::selection {
   color: $primary;
-  background: $primary;
+  background: white;
 }
 @keyframes rotate-words {
   0% {
