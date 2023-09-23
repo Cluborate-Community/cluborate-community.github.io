@@ -28,15 +28,15 @@ $colors: (
 $body-color: #8B734Aff;
 
 @each $color, $value in $colors {
-  .bg-#{$color} {
+  .bg-#{""+$color} {
     background-color: $value;
   }
 
-  .border-#{$color} {
+  .border-#{""+$color} {
     border-color: $value;
   }
 
-  .text-#{$color} {
+  .text-#{""+$color} {
     color: $value;
   }
 }
