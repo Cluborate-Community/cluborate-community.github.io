@@ -141,9 +141,21 @@ html {
   color: #f6efe5;
 }
 
+.bg-dark-blue {
+  background-color: #14293f;
+}
+
+.border-dark-blue {
+  border-color: #14293f;
+}
+
+.text-dark-blue {
+  color: #14293f;
+}
+
 .hero-section {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
 }
 .hero-section .hero-image {
@@ -219,7 +231,7 @@ html {
   left: 20%;
   height: 100%;
   width: 30%;
-  background-color: #000;
+  background-color: #8b734a;
   animation: animateSeparator 1s linear forwards;
 }
 @keyframes animateSeparator {
@@ -287,6 +299,7 @@ html {
   --bs-safety-orange: #fe7809;
   --bs-coyote: #8b734a;
   --bs-tan: #f6efe5;
+  --bs-dark-blue: #14293f;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;

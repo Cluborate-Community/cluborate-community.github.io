@@ -22,7 +22,8 @@ $colors: (
   powder-blue: #A3C4D7ff,
   safety-orange: #FE7809ff,
   coyote: #8B734Aff,
-  tan: #F6EFE5ff
+  tan: #F6EFE5ff,
+  dark-blue: #14293f
 );
 
 $body-color: #8B734Aff;
@@ -44,7 +45,7 @@ $body-color: #8B734Aff;
 $hero-image-url: '../../assets/images/skyline.jpg';
 .hero-section {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
 
   .hero-image {
@@ -124,7 +125,7 @@ $hero-image-url: '../../assets/images/skyline.jpg';
     left: 20%;
     height: 100%;
     width: 30%;
-    background-color: #000;
+    background-color: $body-color;
     animation: animateSeparator 1s linear forwards;
   }
   @keyframes animateSeparator {
