@@ -19,8 +19,9 @@
 - title: Contact
   url: /#contact
 
-- title: Events
-  url: /events-list
+# hidden for now
+# - title: Events
+#   url: /events-list
 
 - title: Team
   url: /team
