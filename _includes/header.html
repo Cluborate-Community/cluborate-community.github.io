@@ -11,10 +11,10 @@
         {% for item in site.data.navbar %}
           {% if item.dropdown %}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fw-bold" style="font-weight: 900;" href="#" id="dropDown{{ item.title | camelcase }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle fw-semibold" style="font-weight: 900;" href="#" id="dropDown{{ item.title | camelcase }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ item.title }}
               </a>
-              <ul class="dropdown-menu dropdown-menu-light fw-bold" aria-labelledby="dropDown{{ item.title | camelcase }}">
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropDown{{ item.title | camelcase }}">
                 {% for link in item.dropdown %}
                   <li><a class="dropdown-item" href="{{ link.url }}">{{ link.title }}</a></li>
                 {% endfor %}
@@ -22,7 +22,7 @@
             </li>
           {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+              <a class="nav-link fw-semibold" href="{{ item.url }}">{{ item.title }}</a>
             </li>
           {% endif %}
         {% endfor %}

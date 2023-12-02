@@ -10,14 +10,14 @@ title: Clubs List
 <!-- would've named it clubs.html but cant have same name as collection, apparently -->
 <section>
     <div class="container my-4">
-        <h1 class="display-3 text-secondary text-center pb-2">Club Gallery</h1>
+        <h1 class="display-3 text-primary text-center pb-2">Club Gallery</h1>
         <div class="row row-cols-1 row-cols-lg-2 g-2">
             {% for club in site.clubs %}
             <a href="{{club.url}}" class="text-decoration-none">
-                <div class="border border-primary rounded p-2 d-flex gap-2 align-items-center h-100" style="border-color: {{club.color}};"> <!--- fixme -->
+                <div class="bg-tan rounded p-2 d-flex gap-2 align-items-center h-100" style="border-color: {{club.color}};"> <!--- fixme -->
                     <div class="col col-6">
                         <div class="ratio ratio-1x1">
-                            <img class="card-img-left placeholder h-100 w-100" src="/_clubs/galleries/{{club.name}}/thumbnail.png">
+                            <img class="card-img-left rounded placeholder h-100 w-100 overflow-hidden" src="/assets/galleries/{{club.name}}/thumbnail.jpg">
                         </div>
                     </div>
                     <div class="col col-6">

@@ -1,17 +1,17 @@
-# - title: About
-#   url: /#about
+- title: About
+  url: /#about
 
-# - title: Team
-#   url: /team
+- title: Team
+  url: /team
 
-# - title: Get Involved
-#   dropdown:
-#     - title: Club Coalition
-#       url: /get-involved
-#     - title: Regional Teams
-#       url: /regional-teams
-#     - title: Volunteer
-#       url: /volunteer
+- title: Get Involved
+  dropdown:
+    - title: Club Coalition
+      url: /get-involved
+    - title: Regional Teams
+      url: /regional-teams
+    - title: Volunteer
+      url: /volunteer
 
 - title: FAQs
   url: /faqs
@@ -19,9 +19,8 @@
 - title: Contact
   url: /#contact
 
-# hidden for now
-# - title: Events
-#   url: /events-list
+- title: Events
+  url: /events-list
 
-- title: Team
-  url: /team
+- title: Club List
+  url: /club-list

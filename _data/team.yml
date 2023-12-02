@@ -2,20 +2,6 @@
 # headshots under ./assets/images/headshots
 - year: 2023
   departments:
-    - name: Board of Directors
-      people:
-        - name: Edward Gordon
-          position: Director
-          headshot: edward-gordon.jpg
-
-        - name: Lawerence Wang
-          position: Director
-          headshot: lawerence-wang.jpg
-
-        - name: Julia Gotovsky
-          position: Director
-          headshot: julia-gotovsky.jpg
-
     - name: Presidential Board
       people:
         - name: Coco Ji

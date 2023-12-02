@@ -18,12 +18,14 @@ html {
 }
 
 $colors: (
-  uranian-blue: #BAE2FBff,
+  uranian-blue: #c8eaff,
   powder-blue: #A3C4D7ff,
+  powder-blue-dark: rgb(124, 176, 206),
   safety-orange: #FE7809ff,
   coyote: #8B734Aff,
-  tan: #F6EFE5ff,
-  dark-blue: #14293f
+  tan: rgb(245, 237, 228),
+  dark-blue: #14293f,
+  white: white
 );
 
 $body-color: #8B734Aff;
@@ -119,23 +121,23 @@ $hero-image-url: '../../assets/images/skyline.jpg';
   height: 2px;
   background-color: #ccc;
   margin: 10px 0;
-  .animated-line {
-    position: absolute;
-    top: 0;
-    left: 20%;
-    height: 100%;
-    width: 30%;
-    background-color: $body-color;
-    animation: animateSeparator 1s linear forwards;
-  }
-  @keyframes animateSeparator {
-    0% {
-      left: 20%;
-    }
-    100% {
-      left: 50%;
-    }
-  }
+  // .animated-line {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 20%;
+  //   height: 100%;
+  //   width: 30%;
+  //   background-color: $body-color;
+  //   animation: animateSeparator 1s linear forwards;
+  // }
+  // @keyframes animateSeparator {
+  //   0% {
+  //     left: 20%;
+  //   }
+  //   100% {
+  //     left: 50%;
+  //   }
+  // }
 }
 
 ::selection {

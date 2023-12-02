@@ -82,15 +82,15 @@ html {
 }
 
 .bg-uranian-blue {
-  background-color: #bae2fb;
+  background-color: #c8eaff;
 }
 
 .border-uranian-blue {
-  border-color: #bae2fb;
+  border-color: #c8eaff;
 }
 
 .text-uranian-blue {
-  color: #bae2fb;
+  color: #c8eaff;
 }
 
 .bg-powder-blue {
@@ -103,6 +103,18 @@ html {
 
 .text-powder-blue {
   color: #a3c4d7;
+}
+
+.bg-powder-blue-dark {
+  background-color: rgb(124, 176, 206);
+}
+
+.border-powder-blue-dark {
+  border-color: rgb(124, 176, 206);
+}
+
+.text-powder-blue-dark {
+  color: rgb(124, 176, 206);
 }
 
 .bg-safety-orange {
@@ -130,15 +142,15 @@ html {
 }
 
 .bg-tan {
-  background-color: #f6efe5;
+  background-color: rgb(245, 237, 228);
 }
 
 .border-tan {
-  border-color: #f6efe5;
+  border-color: rgb(245, 237, 228);
 }
 
 .text-tan {
-  color: #f6efe5;
+  color: rgb(245, 237, 228);
 }
 
 .bg-dark-blue {
@@ -151,6 +163,18 @@ html {
 
 .text-dark-blue {
   color: #14293f;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.text-white {
+  color: white;
 }
 
 .hero-section {
@@ -225,23 +249,6 @@ html {
   background-color: #ccc;
   margin: 10px 0;
 }
-.separator .animated-line {
-  position: absolute;
-  top: 0;
-  left: 20%;
-  height: 100%;
-  width: 30%;
-  background-color: #8b734a;
-  animation: animateSeparator 1s linear forwards;
-}
-@keyframes animateSeparator {
-  0% {
-    left: 20%;
-  }
-  100% {
-    left: 50%;
-  }
-}
 
 ::selection {
   color: #fe7809;
@@ -294,12 +301,14 @@ html {
  */
 :root,
 [data-bs-theme=light] {
-  --bs-uranian-blue: #bae2fb;
+  --bs-uranian-blue: #c8eaff;
   --bs-powder-blue: #a3c4d7;
+  --bs-powder-blue-dark: rgb(124, 176, 206);
   --bs-safety-orange: #fe7809;
   --bs-coyote: #8b734a;
-  --bs-tan: #f6efe5;
+  --bs-tan: rgb(245, 237, 228);
   --bs-dark-blue: #14293f;
+  --bs-white: white;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
