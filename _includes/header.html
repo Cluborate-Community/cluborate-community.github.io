@@ -1,6 +1,6 @@
 <nav class="navbar bg-dark-blue navbar-expand-md navbar-dark">
   <div class="container-fluid px-3">
-    <a class="navbar-brand fw-bold" href="/"><span class="text-uranian-blue">Cluborate</span> <span class="text-light">Community</span></a>
+    <a class="navbar-brand fw-bold" href="{{ '/' | relative_url}}"><span class="text-uranian-blue">Cluborate</span> <span class="text-light">Community</span></a>
     <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse"
       data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -16,13 +16,13 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropDown{{ item.title | camelcase }}">
                 {% for link in item.dropdown %}
-                  <li><a class="dropdown-item" href="{{ link.url }}">{{ link.title }}</a></li>
+                  <li><a class="dropdown-item" href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
                 {% endfor %}
               </ul>
             </li>
           {% else %}
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="{{ item.url }}">{{ item.title }}</a>
+              <a class="nav-link fw-semibold" href="{{ item.url | relative_url }}">{{ item.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
