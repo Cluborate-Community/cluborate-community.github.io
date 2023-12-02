@@ -2,19 +2,19 @@
 layout: wrapper
 ---
 
-<section class="club-photo-header">
+<!-- <section class="club-photo-header">
     <div class="header-image placeholder w-100 h-100"></div>
     <div class="header-overlay"></div>
-</section>
+</section> -->
 
 <div class="container py-3">
 
-    <a class="fs-5 link-primary text-decoration-none" href="{{'/club-list' | relative_url}}">
+    <a class="fs-5 link-secondary text-decoration-none" href="{{'/club-list' | relative_url}}">
         <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to all
     </a>
 
     <h1 class="display-3 text-secondary">{{page.title}}</h1>
-    <p class="lead text-primary fs-4">
+    <p class="lead fw-semibold text-dark-blue fs-4">
         {{page.one_liner}}
     </p>
     {{content}}
